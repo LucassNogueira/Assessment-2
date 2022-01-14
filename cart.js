@@ -93,9 +93,11 @@ frequency - how many orders a week or month ; number
 */
 
 //CODE HERE
-const customer {
-    name: 'Lucas',
-    addres: '888 apple st',
-    pastOrderAmount: [50, 23, 55, 22, 55, 56, 46],
-    frequency: 4    
-}
+const customer = {
+  name: "Lucas",
+  addres: "888 apple st",
+  pastOrderAmount: [50, 23, 55, 22, 55, 56, 46],
+  frequency: 5,
+};
+
+console.log(customer);
