@@ -121,6 +121,14 @@ const deals = [
 
 //CODE HERE
 
+deals.splice(0, 1, { ...deals[0], title: "10% Off!" });
+// console.log(deals);
+
+// deals[0] = {
+//   title: "10% Off!",
+//   desc: "Applied to your entire order when you spend $30 or more",
+// };
+// console.log(deals);
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -135,3 +143,9 @@ const deals = [
 */
 
 //CODE HERE
+
+deals.splice(1, 1, {
+  ...deals[1],
+  desc: "This deal lasts until the end of April",
+});
+console.log(deals);
