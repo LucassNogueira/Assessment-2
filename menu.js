@@ -58,7 +58,7 @@ const pizza = {
 */
 
 //CODE HERE
-console.log(pizza.tags[1]);
+// console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -68,8 +68,11 @@ console.log(pizza.tags[1]);
 */
 
 //CODE HERE
+let { price } = pizza;
+console.log(price);
 
 /*
+
     Fourth, and last, destructure the category
     property.
 
