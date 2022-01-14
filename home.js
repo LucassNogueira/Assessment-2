@@ -57,7 +57,7 @@ const canWeDeliver = (zipCode) => {
     return "You're in our delivery range!";
   }
 };
-console.log(canWeDeliver(853205));
+// console.log(canWeDeliver(853205));
 /* 
     Problem 2 Continued
 
@@ -76,7 +76,16 @@ console.log(canWeDeliver(853205));
 */
 
 // CODE HERE
-
+const canWeDeliverTwo = (zipCode) => {
+  for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
+    if (deliveryAreaZipCodes[i] !== zipCode) {
+      return "Sorry you are out of the delivery range!";
+    } else {
+      return "We got you covered! go ahead and order!";
+    }
+  }
+};
+console.log(canWeDeliverTwo(85205));
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
