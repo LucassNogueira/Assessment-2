@@ -68,8 +68,8 @@ const pizza = {
 */
 
 //CODE HERE
-let { price } = pizza;
-console.log(price);
+// let { price } = pizza;
+// console.log(price);
 
 /*
 
@@ -80,6 +80,9 @@ console.log(price);
 */
 
 //CODE HERE
+
+// let { category } = pizza;
+// console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -94,7 +97,49 @@ console.log(price);
 */
 
 //CODE HERE
-
+const foodArr = [
+  {
+    name: "pep",
+    price: 18,
+    category: "entree",
+    popularity: 100,
+    rating: 6,
+    tags: ["gluten-free", "kids"],
+  },
+  {
+    name: "pep2",
+    price: 181,
+    category: "entree",
+    popularity: 13,
+    rating: 6,
+    tags: ["not-free", "kiddos"],
+  },
+  {
+    name: "pep3",
+    price: 15,
+    category: "entree",
+    popularity: 87,
+    rating: 6,
+    tags: ["adult", "yep"],
+  },
+  {
+    name: "pep4",
+    price: 1888,
+    category: "entree",
+    popularity: 10034,
+    rating: 6,
+    tags: ["thebest", "18+"],
+  },
+  {
+    name: "pep5",
+    price: 555,
+    category: "entree",
+    popularity: 0,
+    rating: 6,
+    tags: ["thisonesucks", "dontbuy"],
+  },
+];
+console.log(foodArr);
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
