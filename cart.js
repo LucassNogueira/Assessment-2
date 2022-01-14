@@ -53,12 +53,12 @@ const summedPrice = cart.reduce((acc, el) => (acc += el.price), 0);
 
 //CODE HERE
 const calcFinalPrice = (cartTotal, couponValue, tax) => {
-  cartTotal = cartTotal * (tax + 1);
-  cartTotal = cartTotal - couponValue;
+  return (cartTotal = cartTotal * (tax + 1));
+  return (cartTotal = cartTotal - couponValue);
   return cartTotal;
 };
 
-// console.log(calcFinalPrice(100, 40, 0.06));
+console.log(calcFinalPrice(100, 40, 0.06));
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
