@@ -139,7 +139,7 @@ const foodArr = [
     tags: ["thisonesucks", "dontbuy"],
   },
 ];
-console.log(foodArr);
+// console.log(foodArr);
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -154,7 +154,12 @@ console.log(foodArr);
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const includesTag = (tags) => {
+  foodArr.filter(tags);
+  return foodArr.tags;
+};
+
+const filteredFood = foodArr.filter(includesTag("kids"));
 
 //////////////////PROBLEM 5////////////////////
 /* 
