@@ -58,7 +58,7 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
   return cartTotal;
 };
 
-console.log(calcFinalPrice(100, 40, 0.06));
+// console.log(calcFinalPrice(100, 40, 0.06));
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
@@ -81,7 +81,10 @@ console.log(calcFinalPrice(100, 40, 0.06));
 
 /*
     TEXT ANSWER HERE
-
+name - so you have something to identify them by ; string
+address - so you are able to locate where they are to send direct mail ads ; string
+past order amounts - by having this information you will be able to see their spending habbits ; array number
+frequency - how many orders a week or month ; number
 */
 
 /*
@@ -90,3 +93,9 @@ console.log(calcFinalPrice(100, 40, 0.06));
 */
 
 //CODE HERE
+const customer {
+    name: 'Lucas',
+    addres: '888 apple st',
+    pastOrderAmount: [50, 23, 55, 22, 55, 56, 46],
+    frequency: 4    
+}
