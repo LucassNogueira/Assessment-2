@@ -24,7 +24,7 @@
 
 const greetUser = (username) => `Welcome back ${username}`;
 
-console.log(greetUser("Lucas"));
+// console.log(greetUser("Lucas"));
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -50,6 +50,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206];
 
 //CODE HERE
 
+const canWeDeliver = (zipCode) => {
+  if (deliveryAreaZipCodes.includes(zipCode) !== true) {
+    return "Gotta move closer, sorry!!";
+  } else {
+    return "You're in our delivery range!";
+  }
+};
+console.log(canWeDeliver(853205));
 /* 
     Problem 2 Continued
 
