@@ -121,8 +121,9 @@ const deals = [
 
 //CODE HERE
 
-deals.splice(0, 1, { ...deals[0], title: "10% Off!" });
-// console.log(deals);
+deals[0].title = deals[0].title.replace("15", "10");
+
+console.log(deals[0]);
 
 // deals[0] = {
 //   title: "10% Off!",
@@ -144,8 +145,5 @@ deals.splice(0, 1, { ...deals[0], title: "10% Off!" });
 
 //CODE HERE
 
-deals.splice(1, 1, {
-  ...deals[1],
-  desc: "This deal lasts until the end of April",
-});
-console.log(deals);
+deals[1].desc = deals[1].desc.replace("March", "April").trim();
+console.log(deals[1]);

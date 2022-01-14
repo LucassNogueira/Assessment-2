@@ -102,7 +102,7 @@ const foodArr = [
     name: "pep",
     price: 18,
     category: "entree",
-    popularity: 100,
+    popularity: 5,
     rating: 6,
     tags: ["gluten-free", "kids"],
   },
@@ -110,9 +110,9 @@ const foodArr = [
     name: "pep2",
     price: 181,
     category: "entree",
-    popularity: 13,
+    popularity: 4,
     rating: 6,
-    tags: ["not-free", "kiddos"],
+    tags: ["not-free", "kiddos", "yep"],
   },
   {
     name: "pep3",
@@ -120,13 +120,13 @@ const foodArr = [
     category: "entree",
     popularity: 87,
     rating: 6,
-    tags: ["adult", "yep"],
+    tags: ["thebest", "yep"],
   },
   {
     name: "pep4",
     price: 1888,
     category: "entree",
-    popularity: 10034,
+    popularity: 10,
     rating: 6,
     tags: ["thebest", "18+"],
   },
@@ -154,13 +154,13 @@ const foodArr = [
 
 //CODE HERE
 
-const includesTag = (tags) => {
-  foodArr.filter(tags);
-  return foodArr.tags;
-};
+const filteredFood = foodArr.filter((foodObj) => {
+  if (foodObj.tags.includes("thebest")) {
+    return true;
+  }
+});
 
-const filteredFood = foodArr.filter(includesTag("kids"));
-
+console.log(filteredFood);
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -202,6 +202,19 @@ const filteredFood = foodArr.filter(includesTag("kids"));
 
 //CODE HERE
 
+function filterByProperty(property, number, type) {
+  const filtered = foodArr.filter(function (foodObj) {
+    if (type === "above") {
+      return foodObj[property] > number;
+    } else {
+      return foodObj[property] < number;
+    }
+  });
+  console.log(filtered);
+  return filtered;
+}
+
+// filterByProperty("popularity", 9, "above");
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
