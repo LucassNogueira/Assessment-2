@@ -36,7 +36,7 @@ const pizza = {
   category: "entree",
   popularity: 100,
   rating: 6,
-  tags: ["gluten-free, kids"],
+  tags: ["gluten-free", "kids"],
 };
 
 //////////////////PROBLEM 2////////////////////
@@ -48,6 +48,7 @@ const pizza = {
 */
 
 //CODE HERE
+// console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -57,6 +58,7 @@ const pizza = {
 */
 
 //CODE HERE
+console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
